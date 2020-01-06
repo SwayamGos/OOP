@@ -1,0 +1,50 @@
+Java OOP concepts description:
+
+Abstraction:
+Data Abstraction is the property by virtue of which only the essential details are displayed to the user.The trivial or the non-essentials units are not displayed to the user. Ex: A car is viewed as a car rather than its individual components.
+
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
+
+Advantages of Abstraction
+
+1. It reduces the complexity of viewing the things.
+2. Avoids code duplication and increases reusability.
+3. Helps to increase security of an application or program as only important details are provided to the user.
+
+Encapsulation:
+Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
+
+Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared.
+As in encapsulation, the data in a class is hidden from other classes, so it is also known as data-hiding.
+
+Advantages of Encapsulation:
+
+Data Hiding: The user will have no idea about the inner implementation of the class. It will not be visible to the user that how the class is storing values in the variables. He only knows that we are passing the values to a setter method and variables are getting initialized with that value.
+Increased Flexibility: We can make the variables of the class as read-only or write-only depending on our requirement. If we wish to make the variables as read-only then we have to omit the setter methods like setName(), setAge() etc. from the above program or if we wish to make the variables as write-only then we have to omit the get methods like getName(), getAge() etc. from the above program
+Reusability: Encapsulation also improves the re-usability and easy to change with new requirements.
+Testing code is easy: Encapsulated code is easy to test for unit testing.
+
+Inheritance:
+It is the mechanism in java by which one class is allow to inherit the features(fields and methods) of another class.
+Important terminology:
+
+Super Class: The class whose features are inherited is known as super class(or a base class or a parent class).
+Sub Class: The class that inherits the other class is known as sub class(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+
+Runtime polymorphism:
+Method overriding is one of the ways in which Java supports Runtime Polymorphism. Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at run time, rather than compile time.
+
+When an overridden method is called through a superclass reference, Java determines which version(superclass/subclasses) of that method is to be executed based upon the type of the object being referred to at the time the call occurs. Thus, this determination is made at run time.
+At run-time, it depends on the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
+
+Compile time polymorphism:
+Compile time polymorphism or static method dispatch is a process in which a call to an overloading method is resolved at compile time rather than at run time. In this process, we done overloading of methods is called through the reference variable of a class here no need to superclass. 
+Method Overloading in Java:
+If a class have multiple methods by same name but different parameters, it is known as Method Overloading.
+
+Advantage of method overloading?
+
+Method overloading increases the readability of the program.
+
+These were the descriptions of basic OOP concepts of JAVA and their advantages.
